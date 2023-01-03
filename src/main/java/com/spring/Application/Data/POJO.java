@@ -1,4 +1,4 @@
-package com.spring.Application.Controller;
+package com.spring.Application.Data;
 
 import org.springframework.stereotype.Component;
 
