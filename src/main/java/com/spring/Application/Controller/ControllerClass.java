@@ -28,7 +28,14 @@ public class ControllerClass {
     @GetMapping("/getBooksData")
     public List getBooksData(){
         List response =  repo.findAll();
-        return response;
+
+        if(response.size() ==0 ){
+            response.add("Sorry No books found");
+            return response;
+        }
+        else{
+            return response;
+        }
     }
 
     @DeleteMapping("/deleteAllData")
