@@ -49,17 +49,17 @@ public class ControllerClass {
        }
         return response;
     }
-    @DeleteMapping("/deleteById")
-    public String deleteById(@RequestParam(value = "id") String id){
-        String response;
-
-        if(repo.existsById(id)){
-            repo.deleteById(id);
-            response = id + " deleted successfully!!";
-        }else{
-            response = "Book not found!!";
-        }
-        return response;
-    }
+//    @DeleteMapping("/deleteById")
+//    public String deleteById(@RequestParam(value = "id") String id){
+//        String response;
+//
+//        if(repo.existsById(id)){
+//            repo.deleteById(id);
+//            response = id + " deleted successfully!!";
+//        }else{
+//            response = "Book not found!!";
+//        }
+//        return response;
+//    }
 
 }
